@@ -22,7 +22,7 @@ public class concurrency {
         }
         double endTime = System.currentTimeMillis();
 
-        System.out.println("Linear time in milliseconds" + (endTime-startTime) + " Sum: " + sum);
+        System.out.println("Linear time in milliseconds: " + (endTime-startTime) + " Sum: " + sum);
 
         int nLength = numbers.length;
         int startPos = 0;
@@ -64,6 +64,6 @@ public class concurrency {
 
         endTime = System.currentTimeMillis();
 
-        System.out.println("Parallel time in milliseconds " + (endTime-startTime) + " Sum: " + (t1.getSum() + t2.getSum() + t3.getSum() + t4.getSum() + t5.getSum()));
+        System.out.println("Parallel time in milliseconds: " + (endTime-startTime) + " Sum: " + (t1.getSum() + t2.getSum() + t3.getSum() + t4.getSum() + t5.getSum()));
     }
 }
